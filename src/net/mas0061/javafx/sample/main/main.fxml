@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="206.0" prefWidth="427.0" xmlns:fx="http://javafx.com/fxml" fx:controller="net.mas0061.javafx.sample.main.ChildViewMainControl">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="childButton" layoutX="181.0" layoutY="97.0" mnemonicParsing="false" onAction="#child" text="to Child" />
+  </children>
+</AnchorPane>
