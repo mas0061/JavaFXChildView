@@ -13,7 +13,11 @@ public class ChildViewMain extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		primaryStage.setTitle("Child view sample");
-		Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
+		Parent root = (Parent) loader.load();
+		
+		ChildViewMainControl controller = loader.getController();
+		controller.setThisStage(primaryStage);
 
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
